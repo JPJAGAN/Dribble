@@ -1,9 +1,9 @@
+# NAME: JAGAN JP
+# REG NO: 212224230099
 # Project Responsive Web Design using Bootstrap
-## Date:
-
+## Date:25-11-25
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
-
 
 ## DESIGN STEPS:
 
@@ -26,10 +26,153 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 ## PROGRAM :
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('your-image-url.jpg'); /* Add your image URL here */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Position the image in the center */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            color: #2c3e50; /* Dark, contrasting text */
+        }
+        .gallery-item {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+    <!-- Google Font for Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dribbble</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                <li class="nav-item"><a class="btn btn-primary" href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Main Content Section -->
+    <div class="container mt-4">
+        <div class="text-center mb-4 header-section">
+            <h3>What are you working on?</h3>
+            <p class="lead">Dribbble The Luxury Black Cars</p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="row gallery-section">
+            <!-- Gallery Items (8 items in total) -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\Land cruiser V8.jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Toyota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\Wide Honda CivicX😮_💨🔥.jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Honda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\download (3).jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">BMW</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\download (2).jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Hyundai</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Gallery Items -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\download (4).jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Audi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\_ Жизнь Киллера _.jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Ford</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\Rolls-Royce_ The Icon of Luxury and Style.jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Roles Royal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="c:\Users\admin\Downloads\download (5).jpg" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Tesla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© Dribbble. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
 
 ## OUTPUT:
 
+<img width="1919" height="1138" alt="image" src="https://github.com/user-attachments/assets/5225edfa-92e5-4d42-a488-f0ace45297f1" />
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
